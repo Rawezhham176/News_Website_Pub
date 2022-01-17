@@ -1,0 +1,98 @@
+.nav {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav ul li {
+  display: inline;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.nav ul li:hover {
+  text-decoration: underline;
+  color: rgb(146, 146, 146);
+}
+
+.nav_min {
+  display: none;
+  justify-content: space-between;
+  padding: 30px 30px 0 30px;
+  top: 0;
+  position: sticky;
+  z-index: 10000;
+  backdrop-filter: blur(10px);
+  border: none;
+}
+
+.nav_min_burger {
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.5s ease;
+}
+
+.nav_min_burger:hover {
+  color: rgb(75, 115, 247);
+}
+
+.nav_min h1 {
+  cursor: pointer;
+  background: -webkit-linear-gradient(rgb(255, 189, 46), rgb(247, 75, 75));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.nav_min h1:hover {
+  background: -webkit-linear-gradient(rgb(46, 206, 255), rgb(75, 115, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav_min ul {
+  display: none;
+  background-color: rgb(44, 44, 44);
+  border-radius: 0 0 0 20px;
+  color: white;
+  list-style: none;
+  padding: 50px;
+  position: absolute;
+  right: 0;
+  top: -15%;
+  text-align: center;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
+}
+
+.nav_min ul li {
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.nav_min ul li:hover {
+  text-decoration: underline;
+  color: rgb(146, 146, 146);
+}
+
+@media screen and (max-width: 1050px) {
+  .nav {
+    display: none;
+  }
+
+  .nav_min {
+    display: flex;
+  }
+}

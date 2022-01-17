@@ -1,0 +1,137 @@
+.introduction {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.introduction h1 {
+  font-size: 80px;
+  font-weight: 100;
+  transition: all 0.5s ease;
+}
+
+.introduction h1 span:nth-child(2) {
+  font-size: 130px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(rgb(46, 84, 255), rgb(154, 155, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.introduction h1 span {
+  font-size: 190px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(rgb(255, 189, 46), rgb(247, 75, 75));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.introduction h1 span:hover {
+  background: -webkit-linear-gradient(rgb(46, 255, 140), rgb(3, 145, 26));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  scale: 1.5;
+}
+
+.introduction p {
+  font-size: 30px;
+  padding: 0px 200px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(rgb(46, 84, 255), rgb(154, 155, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1035px) {
+  .introduction {
+    margin-top: -50px;
+  }
+  .introduction h1 {
+    font-size: 70px;
+  }
+  .introduction h1 span {
+    font-size: 150px;
+    font-weight: 900;
+  }
+  .introduction p {
+    padding: 0px 100px;
+  }
+
+  .headline {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .introduction h1 {
+    font-size: 40px;
+  }
+  .introduction h1 span {
+    font-size: 100px;
+    font-weight: 900;
+  }
+  .introduction p {
+    padding: 0px 150px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .introduction h1 {
+    font-size: 40px;
+  }
+  .introduction h1 span {
+    font-size: 80px;
+  }
+  .introduction p {
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .introduction h1 {
+    font-size: 30px;
+  }
+  .introduction h1 span {
+    font-size: 50px;
+  }
+
+  .introduction p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .headline {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(rgb(46, 84, 255), rgb(154, 155, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headline {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .headline {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .headline {
+    font-size: 50px;
+  }
+}
